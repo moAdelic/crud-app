@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    
+}
+.cruds{
+    margin-left: 5%;
+    margin-right: 50px;
+    
+}
+
+.head{
+    text-align: center;
+}
+.head h1{
+    text-transform: uppercase;
+
+}
+.head p{
+    font-size: 25px;
+}
+input:focus{
+    outline: none;
+    background-color: black;
+    color: aqua;
+    font-size: 20px;
+}
+
+.inputs .title{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.inputs input::placeholder{
+    font-size: 20px;
+    padding: 10px;
+    text-transform: capitalize;
+    
+}
+.product-price{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+.product-price input{
+    width: 20%;
+    height: 40px;
+    margin-right: 10px;
+}
+/* .product-price button{
+    width: 10%;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+} */
+.small{
+    
+    width: 10%;
+    padding: 5px 2px;
+    background-color: red;
+    color: white;
+    height: 40px;
+    border-radius: 4px;
+    
+}
+.product-price .small::before{
+    
+    content: "total: ";
+    padding: 2px;
+    font-size: 15px;
+}
+/* if total is  */
+.total{
+    
+    width: 10%;
+    padding: 5px 2px;
+    background-color: green;
+    color: white;
+    height: 40px;
+    border-radius: 4px;
+    
+}
+.total::before{
+    
+    content: "total: ";
+    padding: 2px;
+    font-size: 15px;
+}
+.count{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+
+}
+.category{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.btn-create,.btn-update{
+    width: 100%;
+    color: aqua;
+    background-color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+
+}
+.search{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+
+
+}
+.search::placeholder{
+    font-size:20px ;
+    padding: 10px;
+
+}
+.search-btn{
+    display: flex;
+    
+}
+.search-btn button{
+    width: 50%;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: aqua;
+    background-color: black;
+    font-size: 20px;
+}
+.delete,.update{
+    width: 100%;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: aqua;
+    background-color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+button{
+cursor: pointer;
+}
+table {
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+}
+table th{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.deleteallbtn{
+    width: 100%;
+    padding: 10px 20px;
+    
+    color: aqua;
+    background-color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width:992px) {
+    table tr th{
+        font-size: 15px;
+    }
+}

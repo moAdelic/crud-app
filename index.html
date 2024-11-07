@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud applications</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <div class="cruds">
+        <div class="head">
+            <h1>cruds</h1>
+            <p>system management system</p>
+        </div>
+        <div class="inputs">
+            <form>
+                <input type="text" placeholder="title" class="title" >
+                <div class="product-price">
+                    <input onkeyUp="gettotal()" type="number" placeholder="price" class="price">
+                    <input onkeyUp="gettotal()" type="number" placeholder="taxes" class="taxes">
+                    <input onkeyUp="gettotal()" type="number" placeholder="ads" class="ads">
+                    <input onkeyUp="gettotal()" type="number" placeholder="discount" class="discount">
+                    <small class="small"></small>
+                </div>
+                <input type="text" placeholder="count" class="count">
+                <input type="text" placeholder="category" class="category">
+                <button class="btn-create">create</button>
+
+            </form>
+        </div>
+        <div class="outputs">
+            <form>
+                <input type="text" placeholder="search" class="search">
+                <div class="search-btn">
+                    <button  class="searchtitle-btn">search by title</button>
+                    <button class="category-btn">search by category</button>
+
+                </div>
+                
+            </form>
+        </div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>titel</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+                <div class="deleteall"></div>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>oppo</td>
+                    <td>10000</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>5</td>
+                    <td>phone</td>
+                    <td><button class="update">update</button></td>
+                    <td><button class="delete">delete</button></td>
+                </tr> -->
+                
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
